@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact SSESA | Social Science Education – EKSU</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <!-- NAVIGATION -->
+  <nav id="navbar">
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-circle">SS</div>
+      <div class="nav-logo-text">
+        <strong>SSESA – EKSU</strong>
+        <span>Social Science Education</span>
+      </div>
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="about.html" class="nav-link">About</a></li>
+      <li><a href="contact.html" class="nav-link nav-cta active">Contact Us</a></li>
+    </ul>
+
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">🏠 Home</a>
+    <a href="about.html">📖 About</a>
+    <a href="contact.html">📞 Contact Us</a>
+  </div>
+
+  <!-- CONTACT HERO -->
+  <section class="contact-hero">
+    <div class="container">
+      <div style="max-width: 600px;">
+        <div class="section-label">Get in Touch</div>
+        <h1>Contact Us</h1>
+        <p>Have questions about programmes, events, or membership? Reach out to SSESA and we'll respond as soon as possible.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT FORM + ADDRESS -->
+  <section class="contact-main">
+    <div class="container">
+      <div class="contact-grid">
+        <div>
+          <div class="section-label">Send a Message</div>
+          <h2 class="section-title" style="font-size: 28px; margin-bottom: 2rem;">We'd Love to Hear From You</h2>
+          <form onsubmit="submitForm(event)">
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label">First Name *</label>
+                <input type="text" class="form-input" placeholder="John" id="fname" required/>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Last Name *</label>
+                <input type="text" class="form-input" placeholder="Doe" id="lname" required/>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Email Address *</label>
+              <input type="email" class="form-input" placeholder="yourname@email.com" id="email" required/>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Subject</label>
+              <select class="form-select" id="subject">
+                <option value="">Select a subject</option>
+                <option>Membership Enquiry</option>
+                <option>Academic Information</option>
+                <option>Events & Activities</option>
+                <option>Partnership / Collaboration</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Message *</label>
+              <textarea class="form-textarea" placeholder="Write your message here..." id="message" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Message →</button>
+          </form>
+          <div class="success-msg" id="successMsg">
+            ✅ Thank you! Your message has been sent. We'll respond within 2–3 business days.
+          </div>
+        </div>
+
+        <div>
+          <div class="section-label">Find Us</div>
+          <h3 class="section-title" style="font-size: 26px; margin-bottom: 1.5rem;">Department Address</h3>
+          <div class="address-info">
+            <div class="info-card">
+              <div class="info-icon">📍</div>
+              <div>
+                <h4>Physical Address</h4>
+                <p>Department of Social Science Education<br>Faculty of Education<br>Ekiti State University (EKSU)<br>Ado-Ekiti, Ekiti State, Nigeria</p>
+              </div>
+            </div>
+            <div class="info-card">
+              <div class="info-icon">📧</div>
+              <div>
+                <h4>Email</h4>
+                <p>ssesa@eksu.edu.ng<br>socialscienceedu@eksu.edu.ng</p>
+              </div>
+            </div>
+            <div class="info-card">
+              <div class="info-icon">📞</div>
+              <div>
+                <h4>Phone</h4>
+                <p>+234 800 000 0000<br>Available: Mon–Fri, 8am–4pm</p>
+              </div>
+            </div>
+            <div class="info-card">
+              <div class="info-icon">🕐</div>
+              <div>
+                <h4>Office Hours</h4>
+                <p>Monday – Friday: 8:00am – 4:00pm<br>Saturday: 9:00am – 12:00pm (during term)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAP -->
+  <section class="map-section">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 2.5rem;">
+        <div class="section-label">Location</div>
+        <h2 class="section-title">Find Us on Campus</h2>
+        <p class="section-sub" style="margin: 0 auto;">
+          SSESA is located within the Faculty of Education, Ekiti State University, Ado-Ekiti.
+        </p>
+      </div>
+      <div class="map-embed">
+        <div class="map-placeholder">
+          <div style="font-size: 56px; margin-bottom: 1rem;">🗺️</div>
+          <h3>Ekiti State University, Ado-Ekiti</h3>
+          <p>Faculty of Education — Department of Social Science Education</p>
+          <a href="https://maps.google.com/?q=Ekiti+State+University+Ado-Ekiti" target="_blank" class="map-btn">Open in Google Maps →</a>
+        </div>
+      </div>
+      <div class="map-grid">
+        <div class="map-detail">
+          <h4>🚌 By Bus</h4>
+          <p>Take any bus heading to EKSU main campus. Alight at the university gate and head to the Faculty of Education building.</p>
+        </div>
+        <div class="map-detail">
+          <h4>🚗 By Car</h4>
+          <p>Enter via the main gate of Ekiti State University along Iworoko Road, Ado-Ekiti. Parking is available near the Faculty of Education.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 3rem;">
+        <div class="section-label">FAQ</div>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-sub" style="margin: 0 auto;">
+          Quick answers to common questions about SSESA and the Department of Social Science Education.
+        </p>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">
+            How do I become a member of SSESA?
+            <span class="arrow">⌄</span>
+          </div>
+          <div class="faq-a">
+            All registered students in the Department of Social Science Education at EKSU are automatically members of SSESA. You can become active by attending general meetings, paying dues, and participating in departmental activities.
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">
+            What programmes are offered in the department?
+            <span class="arrow">⌄</span>
+          </div>
+          <div class="faq-a">
+            The department offers B.Ed. in Social Science Education covering subjects including Economics Education, Government/Civic Education, Geography Education, and Social Studies Education at the undergraduate level. Postgraduate programmes are also available.
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">
+            How can I participate in SSESA events?
+            <span class="arrow">⌄</span>
+          </div>
+          <div class="faq-a">
+            You can participate by following our notice boards, attending general meetings, and following announcements from the SSESA executives. All departmental students are welcome at every event.
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">
+            How do I contact the HOD of Social Science Education?
+            <span class="arrow">⌄</span>
+          </div>
+          <div class="faq-a">
+            You can visit the Head of Department's office at the Department of Social Science Education, Faculty of Education, EKSU during working hours (Monday–Friday, 8am–4pm), or email the department at socialscienceedu@eksu.edu.ng.
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">
+            Can I run for SSESA executive positions?
+            <span class="arrow">⌄</span>
+          </div>
+          <div class="faq-a">
+            Yes! Any registered student in the department with good academic standing can contest for SSESA executive positions during the annual elections. Elections are held according to the SSESA constitution.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>SSESA – EKSU</h3>
+          <p>Social Science Education Students' Association, Ekiti State University, Ado-Ekiti. Committed to excellence, service, and the advancement of social science education.</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About SSESA</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Department</h4>
+          <ul>
+            <li><a href="#">Programmes</a></li>
+            <li><a href="#">Faculty & Staff</a></li>
+            <li><a href="#">Research</a></li>
+            <li><a href="#">EKSU Portal</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul class="footer-contact">
+            <li><span>📍</span> Dept. of Social Science Education, Faculty of Education, EKSU, Ado-Ekiti</li>
+            <li><span>📧</span> ssesa@eksu.edu.ng</li>
+            <li><span>📞</span> +234 800 000 0000</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        © 2025 <span>SSESA – Ekiti State University</span>. Department of Social Science Education. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
